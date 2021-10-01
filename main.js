@@ -50,8 +50,10 @@ for (let i = 0; i < imgs.length; i++) {
   imgs[i].onclick = function () {
     att++;
     imgs[i].src = srcs[i];
-    ar.push(i);
-    arr.push(srcs[i]);
+    if (ar.indexOf(i) === -1) {
+      ar.push(i);
+      arr.push(srcs[i]);
+    }
     if (arr.length === 2) {
       if (arr[0] === arr[1]) {
         console.log("yes");
