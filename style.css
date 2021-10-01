@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gemunu Libre", sans-serif;
+}
+.container {
+  width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .container {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 25px;
+  justify-content: space-between;
+  border: 2px solid cornflowerblue;
+}
+main .container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+img {
+  width: 154px;
+  height: 154px;
+  border: 5px solid cornflowerblue;
+  background-color: #333;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.finish {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 33px;
+  background-color: gray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.finish button {
+  font-size: 22px;
+  width: 150px;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  border: 3px solid cornflowerblue;
+}
